@@ -2,9 +2,10 @@
 import { postings } from "./postings";
 // Import components
 import "./App.css";
-import Directory from "./Components/Directory";
+import Directory from "./component/Directory";
 import Gallery from "./component/gallery";
-import Searchbar from "./Components/Searchbar";
+import Searchbar from "./component/Searchbar";
+import Sidebar from "./component/Sidebar";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         {/* Your content will go here! */}
         <Searchbar />
         <Directory />
+        <Sidebar />
         <Gallery postings={postings} />
       </div>
     </div>
