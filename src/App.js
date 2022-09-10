@@ -2,6 +2,7 @@
 import { postings } from "./postings";
 // Import components
 import "./App.css";
+import Directory from "./Components/Directory";
 import Gallery from "./component/gallery";
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
       <h1>craigslist</h1>
       <div className="App">
         {/* Your content will go here! */}
+        <Directory />
         <Gallery postings={postings} />
       </div>
     </div>
