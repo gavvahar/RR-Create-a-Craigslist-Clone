@@ -4,6 +4,7 @@ import { postings } from "./postings";
 import "./App.css";
 import Directory from "./Components/Directory";
 import Gallery from "./component/gallery";
+import Searchbar from "./Components/Searchbar";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <h1>craigslist</h1>
       <div className="App">
         {/* Your content will go here! */}
+        <Searchbar />
         <Directory />
         <Gallery postings={postings} />
       </div>
